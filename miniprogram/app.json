@@ -38,18 +38,6 @@
         "selectedIconPath": "images/home-on.png"
       },
       {
-        "pagePath": "pages/basic/home/index",
-        "text": "基础",
-        "iconPath": "images/basic.png",
-        "selectedIconPath": "images/basic-on.png"
-      },
-      {
-        "pagePath": "pages/game/home/index",
-        "text": "趣味",
-        "iconPath": "images/game.png",
-        "selectedIconPath": "images/game-on.png"
-      },
-      {
         "pagePath": "pages/about/home/index",
         "text": "关于",
         "iconPath": "images/about.png",
