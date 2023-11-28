@@ -10,7 +10,7 @@ Page({
       // },
       {
         title: '表情识别',
-        img: '/images/face_1024_700_1.jpg',
+        img: 'https://i.postimg.cc/vTqXT85Y/face-1024-700-1.jpg',
         url: '/pages/basic/face/index'
       },
       {
