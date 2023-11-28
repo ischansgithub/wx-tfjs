@@ -3,10 +3,15 @@
 Page({
   data: {
     list: [
+      // {
+      //   title: '图像分类',
+      //   img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-imagenet-bg.jpg',
+      //   url: '/pages/basic/mobilenet/index'
+      // },
       {
-        title: '图像分类',
-        img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-imagenet-bg.jpg',
-        url: '/pages/basic/mobilenet/index'
+        title: '表情识别',
+        img: '/images/face_1024_700_1.jpg',
+        url: '/pages/basic/face/index'
       },
       {
         title: '姿势识别',
@@ -23,7 +28,7 @@ Page({
 
   onShareAppMessage() {
     return {
-      title: 'AI Pocket - 口袋里的 AI'
+      title: 'SSTI AI'
     }
   },
  

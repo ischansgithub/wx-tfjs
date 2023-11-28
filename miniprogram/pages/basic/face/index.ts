@@ -16,7 +16,8 @@ Page({
     cameraBlockHeight: app.globalData.systemInfo.screenHeight - app.globalData.menuHeaderHeight,
     predicting: false,
     videoWidth: null,
-    videoHeight: null
+    videoHeight: null,
+    resultObject: {} as { [key: string]: number }  // chenww初始值为空字典
   },
 
   /**
@@ -71,17 +72,30 @@ Page({
   },
 
   executeClassify: async function (frame: any) {
-    if (model.isReady() && !this.data.predicting) {
+    const { predicting, cameraBlockHeight } = this.data;
+  
+    if (model.isReady() && !predicting) {
       this.setData({
         predicting: true
       }, async () => {
-        const faces = await model.detectFaces(frame, {width: app.globalData.systemInfo.screenWidth, height: this.data.cameraBlockHeight});
-
-        model.drawFaces(this.ctx, faces);
+        // 获取人脸检测结果
+        const faces = await model.detectFaces(frame, {
+          width: app.globalData.systemInfo.screenWidth,
+          height: cameraBlockHeight
+        });
+  
+        const resultObject = model.chenww_drawLipstick(this.ctx, faces, "rgba(255,0,0,0)")
+        console.log(resultObject)
+        // 更新数据，触发页面更新
+        this.setData({
+          resultObject: resultObject
+        });
+        
+        // 结束预测状态
         this.setData({
           predicting: false,
         });
-      })
+      });
     }
   },
 

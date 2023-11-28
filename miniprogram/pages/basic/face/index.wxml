@@ -13,3 +13,5 @@
 >
   <canvas id="canvas" canvas-id="canvas" class="canvas"></canvas>
 </camera>
+
+<view class="result" wx:if="{{resultObject['mouthOpen'] === 1}}">嘴巴张开</view>
