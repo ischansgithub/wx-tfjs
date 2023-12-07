@@ -1,0 +1,27 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <swiper indicator-dots='true' autoplay='true' interval='5000'>
+    
+    <swiper-item>
+      <!-- https://www.jiqizhixin.com/articles/2023-12-07-5 -->
+      <image src='https://image.jiqizhixin.com/uploads/editor/d2c075a9-f878-4adc-a20f-de1040c9fb59/640.gif'></image>
+    </swiper-item>
+    <swiper-item>
+      <!-- https://www.jiqizhixin.com/articles/2023-11-23-11 -->
+      <image src='https://image.jiqizhixin.com/uploads/editor/5681bb4c-f794-4e30-a4b7-decc76791b1e/demo_dino_gif.gif'></image>
+    </swiper-item>
+    <swiper-item>
+      <!-- https://www.jiqizhixin.com/articles/2023-12-07-6 -->
+      <image src='https://image.jiqizhixin.com/uploads/editor/b560e778-7b20-4eb4-814c-9ab8d02d6251/640.gif'></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{posts_key}}" wx:for-item='item'>
+    <!-- 添加一个view标签，用于附着点击事件 -->
+    <view catchtap='onPostTap' data-postId = "{{item.postId}}">
+      <!-- template -->
+      <template is='postItem' data="{{...item}}" />
+    </view>
+
+  </block>
+</view>

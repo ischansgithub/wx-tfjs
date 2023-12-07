@@ -16,7 +16,10 @@
     "pages/about/home/index",
     "pages/basic/mobilenet/index",
     "pages/about/story/index",
-    "pages/about/log/index"
+    "pages/about/log/index",
+    "pages/posts/post-detail/post-detail",
+    "pages/posts/post"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

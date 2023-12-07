@@ -14,7 +14,8 @@ App<IAppOption>({
     systemInfo: {} as WechatMiniprogram.SystemInfo,
     user: {
       token: ''
-    }
+    },
+    // g_isPlayingMusic: false
   },
   async onLaunch () {
     // SystemInfo

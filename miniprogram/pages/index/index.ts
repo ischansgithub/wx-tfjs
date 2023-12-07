@@ -14,14 +14,14 @@ Page({
         url: '/pages/basic/face/index'
       },
       {
-        title: '姿势识别',
+        title: 'AI视频',
         img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-posenet-bg.jpg',
         url: '/pages/basic/posenet/index'
       },
       {
-        title: '初识 AI',
+        title: 'AI大事记',
         img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-teach-bg.jpg',
-        url: '/pages/game/teachable-machine/index'
+        url: '/pages/posts/post'
       }
     ]
   },
