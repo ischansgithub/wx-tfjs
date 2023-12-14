@@ -11,7 +11,7 @@
     开发故事
   </view>
   <view class="cu-item flex-sub {{currentTab === 'author'?'text-blue cur':''}}" bindtap="onTabChange" data-name="author">
-    作者简介
+    团队介绍
   </view>
   <view class="cu-item flex-sub {{currentTab === 'opportunity'?'text-blue cur':''}}" bindtap="onTabChange" data-name="opportunity">
     合作交流
@@ -28,19 +28,19 @@
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      AI Pocket 是一款可以在手机上运行 TF 模型的小程序，支持包括但不限于文本分类、语音识别、图像识别等模型。
+      掌上AI是一款可以在手机上运行 TF 模型的小程序，支持包括但不限于文本分类、语音识别、图像识别等模型。
     </view>
     <view class="indent-text">
       由于需要联网下载模型文件，为了保证体验效果，请在网络良好条件下使用。
     </view>
   </view>
 
-  <view class="cu-bar bg-white solid-bottom margin-top">
+  <!-- <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
       <text class="cuIcon-title text-blue"></text>特点
     </view>
-  </view>
-  <view class="padding bg-white">
+  </view> -->
+ <!-- <view class="padding bg-white">
     <view class="indent-text">
       在需要使用机器学习算法（尤其涉及到神经网络模型时），通常的做法是前端（比如小程序）采集数据，通过网络调用后台提供的 API，从而实现模型预测。
     </view>
@@ -56,7 +56,7 @@
     <view class="indent-text">
       3. 在进行模型预测前，通过网络把模型下载到本机，然后在本地实时预测。
     </view>
-  </view>
+  </view>  -->
 </block>
 
 <block wx:if="{{currentTab === 'story'}}">
@@ -67,87 +67,188 @@
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      某一天，大佬和我聊到 Tfjs，问我有没可能搬到小程序上，说是没准可以做个爆款。
+      某一天，我在去图书馆路上看到一位坐在轮椅上的同学。当时看到他使用智能手机时，明明和正常人一样的四肢，但是他仅能用手指慢慢去小面积的触碰屏幕。让我感觉满艰辛和感慨的。因为有一些的人真的从一出生他们的身体就是带有某种缺陷的每一天都有这样的孩子出生，所以我想了很久很久明明自己的能力就这样，还在想着这些有时我也不清楚自己为什么要去想这么多？添加这么多的烦恼？我也不清楚。
+。
     </view>
     <view class="indent-text">
-      经过一番魔改，我成功把 tfjs 移植到了微信小程序上。然而，由于小程序 API 诸多的不完善，以及没有办法优雅地用上 webgl，模型预测速度实在太慢，就没有了爆款的下文。
+      不过有时候真的想的多了。上天他真的会帮助你去实现他。就在我报的小程序课快结课时，我们老师通知我们需要去组队实现一款小程序。于是我和我的朋友组了对。大家都在说想做什么什么程序时。我想这不是个机会吗？或许会不成功，或许会被他人否定，但是我真的想去尝试一下。所以我告诉了他们我想做一款帮助那些先天和后天造成行动不便的人。
+    </view>
+    <view class="indent-text">
+      为他们设计一款能够实现：使用头部就会滑动悬浮球，点头两下则会点击进入软件，从左往右在从右往左实现关闭软件，张嘴三秒息屏的面部识别软件，帮助他们实现和正常人一样方便的生活。
     </view>
   </view>
 
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text>首次开源
+      <text class="cuIcon-title text-blue"></text>首次创作
     </view>
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      过了几个月，有人看到我写的一篇关于魔改 tfjs 的文章，留言表示很有兴趣，希望能开源。然后，我就整理了下旧代码并开源在了 GitHub 上。
+    在过去的1学年里，我们团队成员在老师的教导下。不断的掌握，汲取小程序代码编程的有关知识。在课程即将结束时，首次创作了这款被我们称为“  掌上AI  ”的小程序。
     </view>
   </view>
 
   <view class="cu-bar bg-white solid-bottom margin-top">
-    <view class="action">
+    <!-- <view class="action">
       <text class="cuIcon-title text-blue"></text>改良优化
-    </view>
+    </view> -->
   </view>
-  <view class="padding bg-white">
+  <!-- <view class="padding bg-white">
     <view class="indent-text">
-      又过了几个月，同事给我分享了一篇文章，里面有提到 TensorFlow 官方对小程序的支持插件。我掐指一算，感觉可以继续搞搞。
+      又过了几个月，同学给我分享了一篇文章，里面有提到 TensorFlow 官方对小程序的支持插件。我掐指一算，感觉可以继续搞搞。
     </view>
     <view class="indent-text">
       我连夜瞄了 tfjs 最近的更新和小程序插件的代码，发现 tfjs 开始考虑对多平台的支持，而且小程序也开放了更多有利的 API。
     </view>
     <view class="indent-text">
-      于是，我就把之前开源的 Demo 再完善了下，用上了 webgl 加速，预测速度飞起，便有了现在的 AI Pocket。
+      于是，我们就连夜用上了 webgl 加速，预测速度飞起，便有了现在的 “掌上AI” 。
     </view>
-  </view>
+  </view> -->
 
-  <view class="cu-bar bg-white solid-bottom margin-top">
+  <!-- <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
       <text class="cuIcon-title text-blue"></text>把 AI 装进口袋
     </view>
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      我希望把更多的 AI 模型装到 AI Pocket 上，在小程序上就可以跑机器学习/深度学习模型，打造一个「流弊」的 AI 口袋。
+     我希望有更多人和我们一起开发这款“掌上AI”。实现更多功能的，同时为那些行动不便的人们，提供一盏微不足道的光。
     </view>
-  </view>
+  </view> -->
 </block>
 
 <block wx:if="{{currentTab === 'author'}}">
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text>简而言之
+      <text class="cuIcon-title text-blue"></text>团队介绍
     </view>
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      只不过是一介码农，希望能和优秀的人共事，一起影响世界。
+     我们团队名为：“创客沙舟”。
+     创客代表“我们团队是有创造力和创新精神的，我们想用程序来实现我们的想法和梦想。”沙舟是我们敢于在沙漠中造船，不畏惧困难和挑战，而是勇于尝试和突破。其实沙舟这个灵感也是来源于古诗《沙丘》的其中一句话：“沙舟独与天齐大，万里无云无雨时”。想要表达的意思是对自由和广阔的向往，也体现了一种对自我和理想的坚持。
+    
     </view>
   </view>
 
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text>关于我
+      <text class="cuIcon-title text-blue"></text>关于我们
     </view>
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      在校期间，我作为技术负责人和好友一同创建了 NYPT 站点，也因此结缘了诸多好友，大家都倾向叫我「猎人」。
+      <view style="font-weight:bolder" >敖佳豪获得奖项：</view>
+
+<view>2023年在睿抗机器人开发者大赛广东赛区半自动对抗竞赛项目中荣获二等奖</view>
+
+<view>2023年在抗机器人开发者大赛广东赛区自动对抗竞赛项目中荣获二等奖</view>
+
+<view>2023年在深圳市技能大赛机器人系统集成职业技能竞赛中荣获二等奖</view>
+
+<view>2023年在深圳技师学院荣获校级“校长专项名学生”</view>
+
+<view>2023年在深圳技师学院荣获校级“校级优秀干部”</view>
+
+<view>2023年在深圳技师学院“腾讯杯”移动轻应用大赛中荣获优胜奖</view>
+
+<view>2023年在深圳技师学院“大唐杯”机器人系统集成竞赛中荣获 优胜奖</view>
+
+<view>2023年在深圳技师学院担任中德智造学院工业机器人俱乐部总部长一职</view>
+
+<view>2023年在深圳技师学院荣获班级二等奖学金</view>
+
+<view>2022年在深圳技师学院担任中德智造学院团总支学生会宣传部部长一职</view>
+
+<view>2022年在深圳技师学院担任20工业机器人应用与维护班级的学习委员一职</view>
+
+<view>2022年在睿抗机器人开发者大意全国总决嘉对抗竞察项目中荣获一等奖</view>
+
+<view>2022年在深圳技师学院荣获班级一等奖学金</view>
+
+<view>2021年在深圳技师学院荣获班级二等奖学金</view>
+
+<view style="font-weight:bolder">钟文轩获得奖项：</view>
+<view>2020年--2023年蝉联3年系级体育竞赛1500米和3000米第一名。</view>
+
+<view>2021年在深圳技师学院荣获班级一等奖学金</view>
+<view>2021年在深圳技师学院荣获班级名学生</view>
+<view>2023年第六届文体艺术节田径比赛4*100M接力第三名</view>
+
+<view>2023年第六届文体艺术节田径比赛甲组1500M第一名</view>
+
+<view>2023年第六届文体艺术节田径比赛甲组4*400M接力第一名</view>
+
+<view>2021年第17届技能节荣获项目“青瑞杯”智能机器人技能竞赛优秀奖</view>
+
+<view>2022年第五届文体艺术节男子乙组4x400米接力第三名</view>
+
+<view>2022年深圳市第十二届职工技术创新运动会</view>
+
+<view>2022年深圳技能大赛--机器人系统集成职业技能竞赛中荣获第三等奖</view>
+
+<view>2023年第18届技能节荣获项目“大唐杯”机器人系统集成竞赛二等奖</view>
+
+<view>2021第四届文体艺术节荣获男子学生乙组1500米第二名</view>
+
+<view>2021第四届文体艺术节荣获男子学生乙组3000米第一名</view>
+
+<view style="font-weight:bolder">庞诗琳获得奖项：</view>
+<view>2023年腾讯杯移动轻应用大赛(小程序界面设	计、交互设计)	二等奖	</view>
+
+<view>2023年中国大学生广告艺术节春季征集大赛短	豆视频类	入围奖	</view>
+
+<view>2023年中国大学生广告艺术节秋季征集大赛H	aoTaiTai企业类IP形象设计类	入围奖</view>
+	
+<view>2022-2023年深圳技师学院	二等奖学金	</view>
+
+<view>2022-2023年深圳技师学院	优秀班干部	</view>
+
+<view>2021-2022年深圳技师学院	三等奖学金	</view>
+
+<view>2020-2023年深圳技师学院	一等奖学金</view>
+
+
+<view  style="font-weight:bolder">苏海能获得奖项：</view>
+
+<view>获得荣誉:班级之星</view>
+<view>优秀团员</view>
+<view>优秀学生干部</view>
+<view>最佳进步奖</view>
+<view>班级一等奖</view>
+<view>系级名学生党的二十大知识竞赛二等奖</view>
+<view>腾讯杯校同移动轻应用大赛二等奖</view>
+<view>班级优秀学生干部</view>
+<view>生活因文明而美好原创Vlong技能竞赛优秀奖</view>
+
+
+<view style="font-weight:bolder">胡文举获得奖项:</view>
+
+<view>2023年5月:腾讯杯校园移动轻应用大赛二等奖</view>
+<view>2021-2022 学年:一等奖学金</view>
+<view>2021-2022 学年:优秀学生干部</view>
+<view>2020-2021学年:最佳进步奖第五届文体艺术节荣誉证书第六名</view>
+
+
+<view  style="font-weight:bolder">李翔获得奖项:</view>
+
+<view>腾讯微搭二等奖</view>
+<view>优秀班干部荣誉证书</view>
+<view>优秀员</view>
+<view>vlog视频大赛二等奖</view>
+
     </view>
     <official-account></official-account>
     <view class="indent-text" style="text-indent: 0;">
       <official-account></official-account>
     </view>
     <view class="indent-text">
-      有创业成功的梦想，但只有创业失败再老实打工的经历。先后就职于厦门网宿、深圳虾皮、腾讯微信支付，在流程引擎、智能客服、低代码、DevOps 等方面均有积累。
-    </view>
-    <view class="indent-text">
-      目前，我就职于一家不知名外企。在辛勤打工之余，也偶尔探索更多有趣的事物！
-    </view>
+          </view>
+   
   </view>
 
-  <view class="cu-bar bg-white solid-bottom margin-top">
+  <!-- <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
       <text class="cuIcon-title text-blue"></text>技能标签
     </view>
@@ -164,24 +265,29 @@
     <view class="cu-tag bg-yellow">Vue</view>
     <view class="cu-tag bg-mauve">Camunda</view>
     <view class="cu-tag bg-pink">MiniProgram</view>
-  </view>
+  </view> -->
 </block>
 
 <block wx:if="{{currentTab === 'opportunity'}}">
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text>代码贡献
+      <text class="cuIcon-title text-blue"></text>代码贡献作者
     </view>
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      目前只有我一个人在折腾，代码将不定期更新到 GitHub 仓库 HunterXuan/wx-tfjs-demo 上。
+      钟文轩，
+      胡文举，
+      苏海能，
+      李翔，
+      庞诗琳，
+      敖佳豪
     </view>
     <view class="indent-text">
-      当然，我也非常欢迎有兴趣的同学一起加功能 & DeBug。
+      
     </view>
   </view>
-
+<!-- 
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
       <text class="cuIcon-title text-blue"></text>合作交流
@@ -194,7 +300,7 @@
     <view class="indent-text">
       欢迎通过各种途径与我交流，包括但不限于微信公众号、个人博客、GitHub 等。
     </view>
-  </view>
+  </view> -->
 
   <view class="cu-bar bg-white solid-bottom margin-top">
     <view class="action">
@@ -206,34 +312,34 @@
       <view class="cu-item">
         <view class="content">
           <text class="cuIcon-news"></text>
-          <text class="text-grey">Blog</text>
+          <text class="text-grey">就读学校</text>
         </view>
         <view class="action">
-          <text class="text-grey">hunterx.xyz</text>
+          <text class="text-grey">深圳技师学院</text>
         </view>
       </view>
 
       <view class="cu-item">
         <view class="content">
           <text class="cuIcon-mail"></text>
-          <text class="text-grey">Email</text>
+          <text class="text-grey">QQ邮箱</text>
         </view>
         <view class="action">
-          <text class="text-grey">endpot@gmail.com</text>
+          <text class="text-grey">2742226847@qq.com</text>
         </view>
       </view>
 
       <view class="cu-item">
         <view class="content">
           <text class="cuIcon-github"></text>
-          <text class="text-grey">GitHub</text>
+          <text class="text-grey">联系人电话</text>
         </view>
         <view class="action">
-          <text class="text-grey">github.com/HunterXuan</text>
+          <text class="text-grey">13544102816</text>
         </view>
       </view>
 
-      <view class="cu-item">
+      <!-- <view class="cu-item">
         <view class="content">
           <text class="cuIcon-weixin"></text>
           <text class="text-grey">公众号</text>
@@ -241,7 +347,7 @@
         <view class="action">
           <text class="text-grey">猎人杂货铺</text>
         </view>
-      </view>
+      </view> -->
     </view>
   </view>
 </block>

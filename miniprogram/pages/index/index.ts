@@ -10,17 +10,17 @@ Page({
       // },
       {
         title: '表情识别',
-        img: 'https://i.postimg.cc/vTqXT85Y/face-1024-700-1.jpg',
+        img: 'https://i.postimg.cc/434GMrbX/image.jpg',
         url: '/pages/basic/face/index'
       },
       {
         title: 'AI视频',
-        img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-posenet-bg.jpg',
+        img: 'https://i.postimg.cc/d0MgYGj4/AI.jpg',
         url: '/pages/basic/posenet/index'
       },
       {
         title: 'AI大事记',
-        img: 'https://ai.flypot.cn/mp/ai-pocket/images/index-teach-bg.jpg',
+        img: 'https://i.postimg.cc/65gmrCgt/AI-2.jpg',
         url: '/pages/posts/post'
       }
     ]

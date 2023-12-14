@@ -1,10 +1,10 @@
 <!--pages/about/home/index.wxml-->
 <scroll-view scroll-y class="scrollPage">
   <view class="UCenter-bg">
-    <image src="/images/logo.png" class="png" mode="widthFix"></image>
-    <view class="text-xl">AI Pocket</view>
+    <image src="/images/1111.png" class="png" mode="widthFix"></image>
+    <view class="text-xl">掌上AI</view>
     <view class="margin-top-sm">
-      <text>By HunterXuan</text>
+      <text>创客沙洲</text>
     </view>
     <image src='https://ai.flypot.cn/mp/ai-pocket/images/wave.gif' mode='scaleToFill' class='gif-wave'></image>
   </view>
