@@ -18,7 +18,8 @@
     "pages/about/story/index",
     "pages/about/log/index",
     "pages/posts/post-detail/post-detail",
-    "pages/posts/post"
+    "pages/posts/post",
+    "pages/test/test"
 
   ],
   "window": {
