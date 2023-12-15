@@ -18,7 +18,7 @@ export const isReady = () => {
   return !!model;
 };
 
-export const detectFaces = async (frame: any, displaySize: {height: number, width: number}) => {
+export const detectFaces = async (frame: any, displaySize: { height: number, width: number }) => {
   const temp = tf.browser.fromPixels({
     data: new Uint8Array(frame.data),
     width: frame.width,
@@ -129,11 +129,11 @@ export const chenww_drawLipstick = (
     const average_y_lower = sum_y_lower / lowerLipPoints.length;
     // console.log(average_x, average_y)
     // 计算上下嘴唇的距离
-    const mouthSize = Math.abs(average_y_upper -  average_y_lower)
+    const mouthSize = Math.abs(average_y_upper - average_y_lower)
     console.log(mouthSize)
 
     resultObject["mouthOpen"] = mouthSize > 10 ? 1 : 0;
-    
+
   });
   return resultObject
 };

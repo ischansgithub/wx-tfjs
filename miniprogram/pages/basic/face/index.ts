@@ -114,7 +114,7 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: 'AI Pocket - 面部特征'
+      title: '面部特征'
     }
   }
 })

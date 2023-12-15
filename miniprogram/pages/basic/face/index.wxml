@@ -1,7 +1,7 @@
 <!--pages/basic/posenet/index.wxml-->
 <custom-header bgColor="bg-gradual-blue" isBack="{{true}}">
   <view slot="backText">返回</view>
-  <view slot="content">面部特征</view>
+  <view slot="content">表情识别</view>
 </custom-header>
 <camera
   device-position="front"
@@ -14,4 +14,4 @@
   <canvas id="canvas" canvas-id="canvas" class="canvas"></canvas>
 </camera>
 
-<view class="result" wx:if="{{resultObject['mouthOpen'] === 1}}">嘴巴张开</view>
+<view class="result" wx:if="{{resultObject['mouthOpen'] === 1}}">检测到嘴巴张开</view>
