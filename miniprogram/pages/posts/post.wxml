@@ -1,18 +1,18 @@
 <import src="post-item/post-item-template.wxml" />
 <view>
-  <swiper indicator-dots='true' autoplay='true' interval='5000'>
+  <swiper indicator-dots='true' autoplay='true' interval='5000' circular="true">
     
     <swiper-item>
       <!-- https://www.jiqizhixin.com/articles/2023-12-07-5 -->
-      <image src='https://hbimg.huabanimg.com/7693ac5a40126020df2477b33937e117745571ef5989fd-i4RSAa_fw658'></image>
+      <image src='https://image.jiqizhixin.com/uploads/editor/0fbc2e2b-f90d-483a-adfc-511528e7def1/640.gif'></image>
     </swiper-item>
     <swiper-item>
       <!-- https://www.jiqizhixin.com/articles/2023-11-23-11 -->
-      <image src='https://hbimg.b0.upaiyun.com/aab7573a6ad12c6089888cec540182776e24863c1faa8d-QdF5ak_fw658'></image>
+      <image src='https://image.jiqizhixin.com/uploads/editor/00ff562f-5231-46e9-b266-5c9c77418709/640.gif'></image>
     </swiper-item>
     <swiper-item>
       <!-- https://www.jiqizhixin.com/articles/2023-12-07-6 -->
-      <image src='https://img95.699pic.com/photo/40139/7613.gif_wh860.gif'></image>
+      <image src='https://image.jiqizhixin.com/uploads/editor/dade2f4f-fe8f-445a-9026-4cf6a2c9ceae/640.gif'></image>
     </swiper-item>
   </swiper>
 
