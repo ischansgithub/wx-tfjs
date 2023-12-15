@@ -1,7 +1,7 @@
 <!--pages/basic/posenet/index.wxml-->
 <custom-header bgColor="bg-gradual-blue" isBack="{{true}}">
   <view slot="backText">返回</view>
-  <view slot="content">表情识别</view>
+  <view slot="content">微表情识别</view>
 </custom-header>
 <camera
   device-position="front"

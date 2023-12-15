@@ -28,7 +28,7 @@
   </view>
   <view class="padding bg-white">
     <view class="indent-text">
-      掌上AI是一款可以在手机上运行 TF 模型的小程序，支持包括但不限于文本分类、语音识别、图像识别等模型。
+      掌上AI是一款可以在手机上运行人脸关键点检测（Tensorflow）模型的小程序。除此之外，我们还集成了“AI大事记”和“AI微视频”2个模块，旨在向用户提供最新的AI资讯。
     </view>
     <view class="indent-text">
       由于需要联网下载模型文件，为了保证体验效果，请在网络良好条件下使用。

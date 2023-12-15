@@ -18,12 +18,13 @@
   z-index: 15;
 } */
 
+
 .result {
   position: fixed;
   bottom: 10rpx; /* 将视图固定在屏幕底部 */
-  left: 50%;
-  transform: translateX(-50%); /* 使视图水平居中 */
+  margin-left: 120rpx;
   font-size: 10vw;
+  width: 100vw;
   color: white; /* 字体颜色设置为白色 */
   text-shadow: 2px 2px 2px black; /* 添加黑色描边，可根据需要调整偏移量 */
   z-index: 15;
